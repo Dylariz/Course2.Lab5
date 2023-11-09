@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 
 namespace Number20;
-
 public class Student
 {
     public enum Genders
@@ -94,7 +93,7 @@ public class Student
             Name = FemaleNames[_random.Next(FemaleNames.Length)];
             Patronymic = FemalePatronymics[_random.Next(FemalePatronymics.Length)];
         }
-            
+
 
         DateOfBirth = new DateTime(_random.Next(simulationYear - 22, simulationYear - 16), _random.Next(1, 13),
             _random.Next(1, 29));

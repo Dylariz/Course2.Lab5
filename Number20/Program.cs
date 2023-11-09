@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 
 namespace Number20;
-
 internal static class Program
 {
     public static void Main(string[] args)
@@ -11,7 +9,7 @@ internal static class Program
         int simulationYear = 2020;
         List<Student> students = new List<Student>();
         List<Student> result = new List<Student>();
-            
+
         // Симуляция 5 лет
         for (int i = 0; i < 5; i++)
         {
@@ -45,7 +43,7 @@ internal static class Program
                 bistStudents.Add((t.Name, t.Course));
             }
         }
-        
+
         foreach (var t in students)
         {
             if (t.Group.Contains("БИВТ") && bistStudents.Contains((t.Name, t.Course)))
