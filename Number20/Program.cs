@@ -32,8 +32,8 @@ internal static class Program
             }
 
             simulationYear++;
-            Console.Clear();
         }
+        Console.Clear();
 
         List<(string, int)> bistStudents = new List<(string, int)>();
         foreach (var t in students)
