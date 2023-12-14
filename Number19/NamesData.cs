@@ -3,6 +3,7 @@ using Newtonsoft.Json;
 
 namespace Number19;
 
+// Класс для десериализации данных о ФИО из JSON файла
 public class NamesData
 {
     public string[] MaleNames { get; set; }

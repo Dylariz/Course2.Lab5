@@ -112,6 +112,7 @@ internal static class Program
         return students;
     }
 
+    // Студенты переходят на следующий курс или удаляются из списка, если обучение завершено
     private static void AdvanceStudents(IList<Student> students)
     {
         for (int i = 0; i < students.Count; i++)
@@ -124,12 +125,14 @@ internal static class Program
         }
     }
 
+    // Добавление новых студентов
     private static void AddNewStudents(int n, int simulationYear, IList<Student> students)
     {
         for (int j = 0; j < n; j++)
             students.Add(new Student(simulationYear));
     }
 
+    // Вывод студентов с совпадающими днями рождения
     private static void PrintByDate(DateTime birthDate, IEnumerable<Student> students)
     {
         Console.WriteLine($"Студенты с датой рождения {birthDate:dd.MM.yyyy}:");
